@@ -1,22 +1,22 @@
-//Création du server http w/Express.
+//create http server w/Express.
 var app = require('express')();
 var http = require('http').Server(app);
 
-// Creation d'une nouvelle instance de socket.io attachée au serveur http. 
+// create new socket.io instance attached to http server. 
 var io = require('socket.io')(http);
 
-//Envoi du html au client connecté.
+//Serve the html to the client:
 app.get('/', function(req, res){ res.sendFile(__dirname+ '/index.html');
 });
 
 
-// io.on event handler, gère les connections, déconnections, ect en utilisant l'obket socket.
-//Quand quelqu'un se connecte, event 'connection':
+// io.on event handler, handles connections, disconnections, ect en using socket object.
+//When a user connects:
 io.on('connection', function(socket) {
     console.log('A user connected');
     
 
-    //Quand quelqu'un se déconnecte, event 'disconnect':
+    //When he disconnects:
     socket.on('disconnect', function() {
     console.log('A user disconnected');
     });
@@ -25,7 +25,7 @@ io.on('connection', function(socket) {
 });
 
 
-//lancement du server
+//Start server
 http.listen(3000, function(){
    console.log('listening on *:3000');
 });
