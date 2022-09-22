@@ -1,13 +1,13 @@
 {
   "name": "socket.io starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Starter files to make a Server with socket.io and express.",
   "main": "app.js",
   "scripts": {
     "run": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["diplodocus"],
+  "author": "Rémi Martin",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",

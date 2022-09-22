@@ -10,3 +10,5 @@ install the dependencies with:
 launch the server with:
 `nodemon app.js`
 *nodemon will restart the server automatically when you save your files*
+
+Open `http://localhost:3000/` to see the page served by the server, and *voila*. 🦕
