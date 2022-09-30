@@ -2,7 +2,7 @@
 ## Socket.io sandbox 🦕
 *This repository is for learning purposes, main files are commented.*
 
-Tee server is operationnal and can be used as a sandbox to learn how to communicate between server and client.
+The server is operationnal and can be used as a sandbox to learn how to communicate between server and client.
 
 install the dependencies with:
 `npm install`
